@@ -2,3 +2,4 @@ Flask~=2.0.1
 keyboard~=0.13.5
 pandas~=1.1.5
 selenium~=3.141.0
+gunicorn~=19.0.0
