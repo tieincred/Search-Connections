@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Linkedin Scrapper!</title>
+    <style>
+        .form-control {
+            max-width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Linkedin Scrapper!</span>
+        </div>
+    </nav>
+    <div class="container-fluid" style="margin-top: 10%; padding-left: 8%;">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="display-5">Single search</h1>
+                <p class="lead">
+                    If you want to look for contact details of a single person or an organization please select this search.
+                    For example : If your needs are company - GenesisAI , position to search - CEO.
+                    You can use this search for this purpose.
+                </p>
+                <a href="http://127.0.0.1:5000/single" class="btn btn-primary">Single search</a>
+            </div>
+            <div class="col-md-6">
+                <h1 class="display-5">Multiple search</h1>
+                <p class="lead">
+                    If you have a list of companies and list of positions you want to search corresponding to that company in a csv file please select this search.
+                    For example : Companies of Interest = [google, microsoft, samsung] , position of interest - [CEO, Founder, HR].
+                    If you have data like this choose this search. An example file can be found on the Multiple search page for more reference.
+                </p>
+                <a href="http://127.0.0.1:5000/multiple" class="btn btn-primary">Multiple search</a>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
