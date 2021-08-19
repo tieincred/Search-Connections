@@ -1,11 +1,8 @@
-from random import random
-import findcontacts
-from flask import Flask, request, render_template, redirect,jsonify, send_file
 import os
-import numpy as np
-import base64
-import io
-import pandas as pd
+
+from flask import Flask, request, render_template, send_file
+
+import findcontacts
 
 app = Flask(__name__)
 
