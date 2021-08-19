@@ -1,9 +1,7 @@
 from selenium import webdriver
-from bs4 import BeautifulSoup
-import os,random,sys,time
+import time
 import keyboard
 import pandas as pd
-import files
 from flask import send_file
 
 
