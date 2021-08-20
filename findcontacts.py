@@ -3,6 +3,7 @@ import time
 import keyboard
 import pandas as pd
 from flask import send_file
+import os
 
 
 class extract:
@@ -16,8 +17,12 @@ class extract:
     def extract_contacts(self, company=None, position=None):
         path = 'chromedriver.exe'
         options = webdriver.ChromeOptions()
+        options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+        options.add_argument("--headless")
+        options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--no-sandbox")
         options.add_argument("--enable-javascript")
-        wd = webdriver.Chrome(path, options=options)
+        wd = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=options)
 
 
         # wd = webdriver.Chrome('chromedriver',chrome_options=chrome_options)
