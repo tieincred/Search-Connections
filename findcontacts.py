@@ -15,6 +15,8 @@ class extract:
 
 
     def extract_contacts(self, company=None, position=None):
+        GOOGLE_CHROME_PATH = '/app/.apt/usr/bin/google_chrome'
+        CHROMEDRIVER_PATH = '/app/.chromedriver/bin/chromedriver'
         path = 'chromedriver.exe'
         options = webdriver.ChromeOptions()
         options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
