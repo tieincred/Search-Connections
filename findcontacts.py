@@ -118,7 +118,7 @@ class extract:
             send_file('Contact_Results.csv',as_attachment=True)
 
 if __name__ == '__main__':
-    new = extract('tausifiqbal10@gmail.com','mechanical.18',multiple=True,filename='static/files/testfile.txt')
+    new = extract('tie@gmail.com','mec.18',multiple=True,filename='static/files/testfile.txt')
     new.contacts_extraction()
 
 
