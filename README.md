@@ -3,8 +3,11 @@ Use this to find connections.
 Instructions to run on local Computer.
 
 Step 1: Install python and pycharm
+
 Following are links to download:
+
 python : https://www.python.org/downloads/release/python-364/
+
 pycharm: https://www.jetbrains.com/pycharm/
 
 step 2: Download this Repository
