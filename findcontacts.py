@@ -1,6 +1,6 @@
 from selenium import webdriver
 import time
-import keyboard
+# import keyboard
 import pandas as pd
 from selenium.webdriver.common.keys import Keys
 
