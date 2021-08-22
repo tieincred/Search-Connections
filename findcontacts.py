@@ -28,9 +28,9 @@ class extract:
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("window-size=1920x1080")
         chrome_options.add_argument("--enable-javascript")
-        wd = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=chrome_options)
+#         wd = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=chrome_options)
 
-#         wd = webdriver.Chrome('chromedriver',options=chrome_options)
+        wd = webdriver.Chrome('chromedriver',options=chrome_options)
         login_link = 'https://www.linkedin.com/uas/login'
         wd.get(login_link)
         time.sleep(10)
