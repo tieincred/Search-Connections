@@ -38,7 +38,7 @@ class extract:
         elementID.send_keys(self.password)
         elementID.submit()
 
-
+        time.sleep(10)
         search_var = company + ' ' + position
         global_search = '//*[@id="global-nav-typeahead"]/input'
         global_element = wd.find_elements_by_xpath(global_search)
