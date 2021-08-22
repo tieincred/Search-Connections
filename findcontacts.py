@@ -115,7 +115,7 @@ class extract:
             x['Phone'] = phone
             x.to_csv('Contact_Results.csv')
             time.sleep(3)
-            send_file('Contact_Results.csv',as_attachment=True)
+#             send_file('Contact_Results.csv',as_attachment=True)
 
 if __name__ == '__main__':
     new = extract('tie@gmail.com','mec.18',multiple=True,filename='static/files/testfile.txt')
