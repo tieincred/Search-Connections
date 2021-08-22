@@ -47,7 +47,7 @@ def multiplesearch():
     file = request.files['fileinput']
     file.save(os.path.join(app.config['FILES_UPLOADS'], "testfile.txt"))
     findm = findcontacts.extract(save_credentials.username, save_credentials.password,multiple=True,filename='static/files/testfile.txt')
-    findm.contacts_extraction()
+#     findm.contacts_extraction()
     return render_template('multiple.html', messagea='Your Information is ready to be downloaded!', messageb=' ', download='Download Now!')
 
 @app.route("/downloads", methods=['POST', 'GET'])
