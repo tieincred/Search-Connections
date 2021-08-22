@@ -11,6 +11,8 @@ step 2: Download this Repository
 You can download this repository on the top right corner.
 
 step 3: Open this downloaded folder in Pycharm.
+
 step 4: Goto Requirements.txt and Install libraries.
 (you'll be prompt to install libraries on top right corner on pycharm)
+
 step 5: Now Run the "app.py" file by right clicking on the file after opening and choosing 'run app.py'.
