@@ -16,15 +16,15 @@ class extract:
 
     def extract_contacts(self, company=None, position=None):
         options = webdriver.ChromeOptions()
-        options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
-        options.add_argument("--headless")
-        options.add_argument("--disable-dev-shm-usage")
-        options.add_argument("--no-sandbox")
+#         options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+#         options.add_argument("--headless")
+#         options.add_argument("--disable-dev-shm-usage")
+#         options.add_argument("--no-sandbox")
         options.add_argument("--enable-javascript")
-        wd = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=options)
+#         wd = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=options)
 
 
-        # wd = webdriver.Chrome('chromedriver',chrome_options=chrome_options)
+        wd = webdriver.Chrome('chromedriver',options=options)
         login_link = 'https://www.linkedin.com/uas/login'
         wd.get(login_link)
         elementID = wd.find_element_by_id('username')
