@@ -3,6 +3,7 @@ import time
 # import keyboard
 import pandas as pd
 from selenium.webdriver.common.keys import Keys
+from pyvirtualdisplay import Display
 
 
 from flask import send_file
@@ -18,6 +19,8 @@ class extract:
 
 
     def extract_contacts(self, company=None, position=None):
+        display = Display(visible=False, size=(800, 600))
+        display.start()
         chrome_options = webdriver.ChromeOptions()
         chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
         chrome_options.add_argument("--headless")
@@ -77,6 +80,7 @@ class extract:
             for i in usages:
                 if i in k:
                     update[k] = v
+        display.stop()
         wd.quit()
         return update
 
